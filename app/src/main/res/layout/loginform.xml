@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#000000">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#000000">
+
+    <ImageView
+        android:id="@+id/baticon"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:paddingBottom="50dp"
+        android:src="@drawable/bat"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cla"
+            app:layout_constraintTop_toBottomOf="@id/baticon"
+            android:layout_width="match_parent"
+            android:layout_height="209dp">
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="match_parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_height="52dp"
+                android:textSize="22dp"
+                android:textColor="#EFEAEA"
+                android:text="Log in to your account"
+                tools:ignore="MissingConstraints" />
+            <EditText
+                android:id="@+id/et"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="14dp"
+                android:textColor="#EFEAEA"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/t1"
+                android:hint="Phone Number"
+                android:textColorHint="#EFEAEA"/>
+            <EditText
+                android:id="@+id/et1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="14dp"
+                android:textColor="#EFEAEA"
+                android:textColorHint="#EFEAEA"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et"
+                android:hint="Password"/>
+
+            <Button
+                android:id="@+id/bu"
+                android:layout_width="207dp"
+                android:layout_height="38dp"
+                android:background="#fff127"
+                android:text="LOG IN"
+                android:textSize="18dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clb"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cla"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+            <TextView
+                android:id="@+id/ta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Or connect with"
+                android:textColor="@android:color/white"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="2dp"
+                app:layout_constraintHorizontal_bias="0.2"/>
+            <View
+                android:background="@android:color/white"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="1dp"
+                android:layout_height="100dp"/>
+            <ImageView
+                android:id="@+id/ia"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/facebook"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_bias="0.6"/>
+            <TextView
+                android:id="@+id/tb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facebook"
+                app:layout_constraintLeft_toRightOf="@+id/ia"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="20dp"
+                app:layout_constraintHorizontal_bias="0.3"
+                android:textColor="@android:color/white"/>
+            <ImageView
+                android:id="@+id/iaa"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="69dp"
+                android:src="@drawable/plus"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_bias="0.6"
+                />
+            <TextView
+                android:id="@+id/tbb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gmail"
+                app:layout_constraintLeft_toRightOf="@+id/iaa"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="73dp"
+                app:layout_constraintHorizontal_bias="0.278"
+                android:textColor="@android:color/white"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+             <TextView
+                 android:id="@+id/tvv"
+                 app:layout_constraintTop_toBottomOf="@id/clb"
+                 app:layout_constraintLeft_toLeftOf="parent"
+                 app:layout_constraintRight_toRightOf="parent"
+                 app:layout_constraintBottom_toTopOf="@+id/linear"
+                 android:layout_width="match_parent"
+                 android:layout_height="25dp"
+                 />
+
+            <LinearLayout
+                android:id="@+id/linear"
+                app:layout_constraintTop_toBottomOf="@+id/tvv"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+                    android:background="#fff127"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAllCaps="false"
+                    android:text="forget password?"/>
+                <View
+                    android:background="@android:color/white"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="1.5dp"
+                    android:layout_height="55dp"/>
+
+                <Button
+                    android:background="#fff127"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAllCaps="false"
+                    android:text="creat new account"/>
+            </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
